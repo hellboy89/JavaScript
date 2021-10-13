@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black ;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Iniciando estudos DOM</h1>
+    <p> Aqui vai o resultado</p>
+    <p> Apredendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p> Teste de parágrafo </p>
+    <p> Teste com segundo parágrafo </p>
+    <div id="msg"> Clique em mim </div>
+
+    <script>
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //corpo.style.background = 'blue'
+        window.document.writeln('<br/>' + window.document.URL + '<br/>')
+        // Inner Text pega somente o texto sem formatação.
+        window.document.writeln('<br/>' + p1.innerText)
+        // Inner HTML pega o texto completo com formatação.
+        window.document.writeln('<br/>' + p1.innerHTML)
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+
+        var d2 = window.document.querySelector('div#msg')
+        d2.style.background= 'pink'
+
+        
+
+    </script>
+
+</body>
+</html>
