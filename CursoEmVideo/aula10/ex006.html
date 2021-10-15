@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento DOM</title>
+    <style>
+        body {
+            background: black;
+            font: normal 20pt Arial;
+            color: white;
+        }
+        h1 {
+            color: green;
+        }
+        h2 {
+            color: yellow;
+        }
+        h3 {
+            color: pink;
+        }
+        h4 {
+            color: tomato;
+        }
+        div#area {
+            font: normal 15pt Arial;
+            background: greenyellow;
+            color: black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Juan </h1>
+    <h2> Cleber </h2>
+    <h3> Faria </h3>
+    <h4> Alves </h4>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText= 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber Nacionalidade</title>
+    <style>
+        body {
+            background: wheat;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2> Sua nacionalidade </h2>
+    Qual o seu país ? <input type="text" name="pais" id="pais">
+    <input type="button" value="Pesquisar" onclick="clicar()">
+    <div id="res">
+    </div>
+    <script>
+        function clicar(){
+            // Necessário ter atenção na hora de capturar os dados do HTML, no caso foi utilizado o 
+            // getElementById, apontando para o ID.
+            var paisp = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            var vel = String(paisp.value)
+            res.innerText = `Seu pais é ${vel}` 
+        if(vel == 'Brasil'){
+            res.innerHTML = 'Você é Brasileiro'
+        }else(
+            res.innerHTML = 'Você é estrangeiro'
+        )
+
+        }
+    </script>
+</body>
+</html>
