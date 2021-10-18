@@ -8,6 +8,10 @@ header {
     text-align: center;
 }
 
+select#selectVal {
+    width: 200px;
+}
+
 section {
     background: white;
     border-radius: 10px;
