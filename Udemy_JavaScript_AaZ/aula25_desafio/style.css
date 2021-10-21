@@ -1,0 +1,32 @@
+div#nota1 {
+    font: normal 15pt Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#nota2 {
+    font: normal 15pt Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#nota3 {
+    font: normal 15pt Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#nota4 {
+    font: normal 15pt Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background:wheat;
+    text-align: center;
+}
+
+h1 {
+    font: normal 40pt Arial;
+}
