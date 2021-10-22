@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interrogatório</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Interrogando Suspeito</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Telefonou para a vítima?
+                <input type="text" id="telefonouVitima">
+            </p>
+            <p>
+                Esteve no local do crime?
+                <input type="text" id="localCrime">
+            </p>
+            <p>
+                Mora perto da vítima?
+                <input type="text" id="moraPerto">
+            </p>
+            <p>
+                Devia para a vítima?
+                <input type="text" id="deviaDindin">
+            </p>
+            <p>
+                Já trabalhou com a vítima?
+                <input type="text" id="trabalhoVitima">
+            </p>
+            <input type="button" value="CONCLUIR!" id="butao" onclick="verificar()"> <br/><br/>
+        </div>
+        <div id="resultado">
+            Resultado aqui!
+            <br/>
+        </div>
+        <br/>
+        <div id="soma"> Soma do total de "sim" </div>
+        <br/>
+
+    </section>
+    <footer>
+        <p>&copy; JavaScript AaZ </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
