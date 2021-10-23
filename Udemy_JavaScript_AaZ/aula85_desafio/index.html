@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Controle Senha </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Segurança de Senha</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Nome: 
+                <input type="text" id="nome"> <br/>
+                E-mail:
+                <input type="text" id="email"> <br/>
+                Senha:
+                <input type="password" id="password"> <br/>
+            </p>
+        </div>
+
+        <div>
+            <input type="button" value="OK" onclick="verifica()" id="ok">
+            <input type="button" value="Limpar" onclick="limpar()" id="limpar">
+            <br/>
+            <br/>
+            <h3 id="resultado">Resultado</h3>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>&copy; JavaScript AaZ </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
