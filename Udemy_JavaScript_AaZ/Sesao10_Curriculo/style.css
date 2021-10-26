@@ -1,0 +1,64 @@
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+/* Selecionando vários elementos no CSS. */
+
+h2,h3,p {
+    padding-top: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+div#logoTopo {
+    text-align: center;
+    background-color:rgb(173, 206, 243);
+}
+
+.resumo {
+    background-color: burlywood;
+    font-weight: bold;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+
+h2 {
+    color: blue;
+}
+
+hr {
+    background-color: pink;
+    height: 3px;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+#github {
+    background-color: gray;
+}
+
+#linkedin {
+    background-color: blue;
+}
+
+#youtube {
+    background-color: red;
+}
+

@@ -17,14 +17,12 @@ function verifica() {
         senhaCorreta: 4011
     }
 
-    if (dadosRecebidos == dadosCorretos) {
+    if (dadosRecebidos._nome == dadosCorretos.nomeCorreto || dadosRecebidos._email == dadosCorretos.emailCorreto || dadosRecebidos._senha === dadosCorretos.senhaCorreta) {
         resultado.innerHTML = "Informações Corretas"
     }
     else {
         resultado.innerHTML = "Informações Incorretas"
     }
-
-    resultado.innerHTML = `${dadosCorretos[0-2]}`
 
     /*
     for (const [chave, valor] of Object.entries(dadosCorretos)) {
@@ -47,3 +45,12 @@ function limpar() {
     resultado.focus()
 
 }
+
+function preencher() {
+ 
+    nome.value = "Juan"
+    email.value = "juan.fsj@gmail.com"
+    senha.value = 4011
+    
+}
+
