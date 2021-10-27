@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+}
+
+#valor1,#valor2,#nome {
+    background-color: aqua;
+}
+
+.botao {
+    font-weight: bold   ;
+}
+
