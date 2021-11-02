@@ -1,4 +1,4 @@
-
+/*
 const paleta1 = document.getElementById("paleta1", Number)
 const paleta2 = document.getElementById("paleta2", Number)
 const paleta3 = document.getElementById("paleta3")
@@ -38,3 +38,16 @@ console.log(paletas_div)
 // Adicionando uma nova propriedade ao elemento criado, no caso o div acima.
 paleta4.classList.add("paleta")
 
+
+// Abaixo removendo um div do HTML.
+const paletas_div = document.querySelector(".paletas_div")
+const paleta2 = document.querySelector("#paleta2")
+
+paletas_div.removeChild(paleta2)
+*/
+
+// Abaixo irá remover todos os elementos da classe que tem nome "paletas_div"
+const paletas_div = document.querySelector(".paletas_div")
+while(paletas_div.firstElementChild) {
+    paletas_div.removeChild(paletas_div.firstElementChild)
+}
