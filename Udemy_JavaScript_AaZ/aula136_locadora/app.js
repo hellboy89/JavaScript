@@ -14,3 +14,16 @@ const criaElementosUi = function() {
     listaFilmes.innerHTML = aux
 }
 
+function exibeFilmes() {
+    setTimeout(criaElementosUi, 2000)
+}
+
+function adicionaFilme(filme, callback) {
+    setTimeout(() => {
+        filmes.push(filme)
+        callback()
+    }, 3000)
+    console.log(filmes)
+}
+
+adicionaFilme({nome: "O contratempo", genero: "Suspense"}, exibeFilmes)
