@@ -28,3 +28,13 @@ async function core() {
      defineValores(filme);
 }
 
+function limparCampos() {
+     titulo.textContent = ""
+     sinopse.textContent = ""
+     ano.textContent = ""
+     duracao.textContent = ""
+     genero.textContent = ""
+     atores.textContent = ""
+     poster.setAttribute("src", imgDefault)
+}
+
