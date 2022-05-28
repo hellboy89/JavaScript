@@ -1,4 +1,5 @@
-const entrada = require('prompt-sync')()
+const entrada = require("prompt-sync")()
+// RODAR ESSE COMANDO AO LADO PARA USAR ESSE DE CIMA: npm install prompt-sync
 
 function entradaText() {
     //Run "npm install prompt-sync" in the terminal (ANTES DE UTILIZAR A ENTRADA DE TEXTO.)
@@ -83,17 +84,13 @@ function _03_troco() {
     var precoUnit = parseFloat(entrada("Preco unitario do produto: "))
     var quantComp = parseInt(entrada("Quantidade comprada: "))
     var dinRec = parseFloat(entrada("Dinheiro Recebido: "))
-
     var troco = dinRec - (precoUnit * quantComp)
-
     console.log(`Troco = ${troco.toFixed(2)}`)
 }
 
 function _03_circulo() {
     var valRaio = parseFloat(entrada("Digite o valor do raio do circulo: "))
-
     var area = 3.14159 * (Math.pow(valRaio, 2))
-
     console.log(`Area = ${area.toFixed(3)}`)
 }
 
@@ -101,7 +98,6 @@ function _03_pagamento() {
     var nome = entrada("Nome: ")
     var valHora = parseFloat(entrada("Valor por hora: "))
     var horaTrab = parseInt(entrada("Horas trabalhadas: "))
-
     var calc = valHora * horaTrab
 
     console.log(`O pagamento para ${nome} deve ser R$ ${calc.toFixed(2)}.`)
@@ -110,9 +106,7 @@ function _03_pagamento() {
 function _03_consumo() {
     var distPerc = parseInt(entrada("distancia percorrida: "))
     var combGast = parseFloat(entrada("combustível gasto: "))
-
     var consumo = distPerc / combGast
-
     console.log(`Consumo medio = ${consumo.toFixed(3)}`)
 }
 
@@ -120,7 +114,6 @@ function _03_medidas() {
     var medA = parseFloat(entrada("Medida A: "))
     var medB = parseFloat(entrada("Medida B: "))
     var medC = parseFloat(entrada("Medida C: "))
-
     var areaQuad = Math.pow(medA, 2)
     var areaTri = (medA * medB) / 2
     var areaTrap = ((medA + medB) * medC) / 2
@@ -132,10 +125,8 @@ function _03_medidas() {
 
 function _03_duracao() {
     var duracao = parseInt(entrada("Digite a duracao em segundos: "))
-
     var horas = duracao / 3600
     var resto = duracao % 3600
-
     var minutos = resto / 60
     var segundos = resto % 60
 
@@ -145,7 +136,6 @@ function _03_duracao() {
 function _04_notas() {
     var nota1 = parseFloat(entrada("Digite a primeira nota: "))
     var nota2 = parseFloat(entrada("Digite a segunda nota: "))
-
     var media = (nota1 + nota2)
 
     console.log(`Nota Final = ${media.toFixed(1)}`)
@@ -159,7 +149,6 @@ function _04_baskara() {
     var coefA = parseFloat(entrada("Coeficiente A: "))
     var coefB = parseFloat(entrada("Coeficiente B: "))
     var coefC = parseFloat(entrada("Coeficiente C: "))
-
     var delta = (coefB * coefB) - (4 * coefA * coefC)
 
     if (delta < 0) {
@@ -196,10 +185,12 @@ class _04_condicional {
 
 function __04_condicional() {
     const menorDeTres = new _04_condicional(7, 3, 8)
-
     menorDeTres.menorDeTres()
-
 }
 
-__04_condicional()
+import Teste from "./classExerProfNelio.js";
+var teste = new Teste
 
+teste.nome = "Juan"
+teste.idade = 32
+teste.status()

@@ -1,4 +1,5 @@
 const entrada = require("prompt-sync")()
+// RODAR ESSE COMANDO AO LADO PARA USAR ESSE DE CIMA: npm install prompt-sync
 
 class Dados {
     nome
@@ -218,4 +219,40 @@ function verTeclado() {
     teclado1.statusTeclado()
 }
 
-verTeclado()
+class TesteClasse_PegaNome {
+    nome
+    sobrenome
+    idade
+    cpf
+    dataNascimento
+
+    constructor (nome, sobrenome, idade, cpf, dataNascimento) {
+        this.nome = nome
+        this.sobrenome = sobrenome
+        this.idade = idade
+        this.cpf = cpf
+        this.dataNascimento = dataNascimento
+    }
+
+    status() {
+        console.log(`Nome: ${this.nome}`)        
+        console.log(`Sobrenome: ${this.sobrenome}`)
+        console.log(`Idade: ${this.idade}`)
+        console.log(`CPF: ${this.cpf}`)
+        console.log(`Data Nascimento: ${this.dataNascimento}`)
+    }
+}
+
+function usaClasse_pegaNome() {
+    var usaNome = new TesteClasse_PegaNome
+    usaNome.nome = "Juan Cleber"
+
+    usaNome.status()
+}
+
+function helloWord() {
+    console.log("ola_mundo")
+}
+
+helloWord()
+
