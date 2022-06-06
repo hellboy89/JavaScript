@@ -1,4 +1,4 @@
-const entrada = require("prompt-sync")()
+// const entrada = require("prompt-sync")()
 // RODAR ESSE COMANDO AO LADO PARA USAR ESSE DE CIMA: npm install prompt-sync
 
 function entradaText() {
@@ -188,9 +188,16 @@ function __04_condicional() {
     menorDeTres.menorDeTres()
 }
 
-import Teste from "./classExerProfNelio.js";
-var teste = new Teste
+export class MenorDeTres_04 {
+    constructor(valor1, valor2, valor3, resultado) {
+        this.valor1 = valor1
+        this.valor2 = valor2
+        this.valor3 = valor3
+        this.resultado = resultado
+    }
 
-teste.nome = "Juan"
-teste.idade = 32
-teste.status()
+    verificaMenor() {
+        
+    }
+}
+

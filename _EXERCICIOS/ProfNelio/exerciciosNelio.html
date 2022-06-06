@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exerciciosNelio.js"></script>
+    <link rel="stylesheet" href="exerciciosNelio.css">
+</head>
+
+<body>
+    <!-- EXERCICIO TEMPERATURA -->
+    <h3 id="subtitulo"> Temperatura </h3>
+    Você vai digitar a temperatura em qual escala? <input type="text" id="temp">
+    <input type="button" onclick="calcTemperatura()" value="Calcular">
+
+    <div id="resultadoTemperatura" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO DARDO -->
+    Digite as três distâncias:<br>
+    <input type="number" id="distancia1"><br>
+    <input type="number" id="distancia2"><br>
+    <input type="number" id="distancia3"><br>
+    <input type="button" value="Calcular" onclick="calcularDistancia()">
+
+    <div id="resultadoDardo" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO GLICOSE -->
+    <h3 id="subtitulo"> Glicose </h3>
+    Digite a medida da glicose: <input type="text" id="glicose"><br>
+    <input type="button" value="Calcular" onclick="calcularGlicose()">
+    
+    <div id="resultadoGlicose" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>   
+
+
+    <!-- EXERCICIO TROCO VERIFICADO -->
+    <h3 id="subtitulo"> Troco Verificado </h3>
+    Preço unitário do produto: <input type="number" id="precoUnitario"><br>
+    Quantidade comprada: <input type="number" id="quantidadeComprada"><br>
+    Dinheiro recebido: <input type="number" id="dinheiroRecebido"><br>
+    <input type="button" onclick="trocoVerificado()" value="calcular">
+
+    <div id="resultadoTrocoVerificado" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO OPERADORA -->
+    <h3 id="subtitulo"> Operadora </h3>
+    Digite a quantidade de minutos: <input type="number" id="quantMinutos">
+    <input type="button" onclick="operadora()" value="calcular">
+
+    <div id="resultadoOperadora" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO MENOR DE TRES -->
+    <h2 id="titulo"> 04 Condicional </h2>
+    <h3 id="subtitulo"> Menor de Três </h3>
+    <input type="number" id="valor1"><br>
+    <input type="number" id="valor2"><br>
+    <input type="number" id="valor3"><br>
+    <input type="button" onclick="menorDeTres()" value="calcular">
+    <div id="resultadoMenorDeTres" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    
+</body>
+
+</html>

@@ -254,5 +254,68 @@ function helloWord() {
     console.log("ola_mundo")
 }
 
-helloWord()
+function teste1() {
+    console.log("hello world TESTE1")           
+    function teste2() {
+        console.log("hello world TESTE2")           
+        function teste3() {
+            console.log("hello world TESTE3")           
+        }
+    }
+}
 
+function testeGit_3105() {
+    console.log("ola")
+
+    let nome = "Juan Cleber"
+    let sobrenome = "Santos"
+    let idade = 32
+    let cpf = "123.456.789-10"
+
+    console.log(`Nome: ${nome}`)
+    console.log(`Sobrenome: ${sobrenome}`)
+    console.log(`Idade: ${idade}`)
+    console.log(`CPF: ${cpf}`)
+
+    if (idade >= 18) {
+        console.log("Maior de Idade")
+    }
+    else {
+        console.log("Menor de Idade")
+    }
+}
+
+function connectionMysql1() {
+    let mysql = require('mysql')
+
+    let con = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "teste123",
+        database: "test"
+    })
+
+    con.connect(function (err) {
+        if (err) throw err
+        console.log("Connected!")
+    })
+
+    let sql = "INSERT INTO test (nome, sobrenome, idade, cpf, dataNascimento) VALUES ('Juan Cleber', 'Santos', 32, '123.456.789-10', '01/01/2000')"
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted")
+    })
+    
+}
+
+function somaValores() {
+    let valor1 = 10
+    let valor2 = 30
+    let valor3 = 50
+
+    let soma = valor1 + valor2 + valor3
+
+    console.log(`A soma dos valores é: ${soma}`)
+}
+
+somaValores()
