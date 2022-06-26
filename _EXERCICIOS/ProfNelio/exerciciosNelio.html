@@ -1,19 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicios Nélio - Lógica de Programação</title>
     <script src="exerciciosNelio.js"></script>
     <link rel="stylesheet" href="exerciciosNelio.css">
 </head>
 
 <body>
+    <!-- EXERCICIO COORDENADAS -->
+    <h3 id="subtitulo"> Coordenadas </h3>
+    Valor de X: <input type="number" id="valX" placeholder="Valor de X"><br>
+    Valor de Y: <input type="number" id="valY" placeholder="Valor de Y"><br>
+    <input type="button" onclick="calcCoordenadas()" value="Calcular">
+
+    <div id="resultadoCoordenadas" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO TEMPO DE JOGO -->
+    <h3 id="subtitulo"> Tempo de Jogo </h3>
+    Hora Inicial: <input type="number" id="horaInicial" placeholder="Hora Inicial"><br>
+    Hora Final: <input type="number" id="horaFinal" placeholder="Hora Final"><br>
+    <input type="button" onclick="calcTempoJogo()" value="Calcular">
+
+    <div id="resultadoTempoJogo" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+    
+    <!-- EXERCICIO AUMENTO -->
+    <h3 id="subtitulo"> Aumento </h3>
+    Digite o salario da pessoa: <input type="number" id="salario" placeholder="digite o salario"><br>
+    <input type="button" onclick="calcAumento()" value="Calcular">
+
+    <div id="resultadoAumento" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+
+    <!-- EXERCICIO MULTIPLOS -->
+    <h3 id="subtitulo"> Multiplos </h3>
+    Digite dois numeros inteiros: <br>
+    <input type="number" id="val1"><br>
+    <input type="number" id="val2"><br>
+    <input type="button" onclick="calcMultiplos()" value="Calcular">
+
+    <div id="resultadoMultiplos" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
+    <!-- EXERCICIO LANCHONETE -->
+    <h3 id="subtitulo"> Lanchonete </h3>
+    Codigo do produto comprado: <input type="number" id="codProdComp"><br>
+    Quantidade comprada: <input type="number" id="quantComp"><br>
+    <input type="button" onclick="calcLanchonete()" value="Calcular">
+
+    <div id="resultadoLanchonete" class="resultado">
+        RESULTADO IRA MOSTRAR AQUI
+    </div>
+
     <!-- EXERCICIO TEMPERATURA -->
     <h3 id="subtitulo"> Temperatura </h3>
-    Você vai digitar a temperatura em qual escala? <input type="text" id="temp">
+    Você vai digitar a temperatura em qual escala? <input type="text" id="escTemp"><br>
+    Temperatura: <input type="number" id="temperatura"><br>
     <input type="button" onclick="calcTemperatura()" value="Calcular">
 
     <div id="resultadoTemperatura" class="resultado">
@@ -35,10 +87,10 @@
     <h3 id="subtitulo"> Glicose </h3>
     Digite a medida da glicose: <input type="text" id="glicose"><br>
     <input type="button" value="Calcular" onclick="calcularGlicose()">
-    
+
     <div id="resultadoGlicose" class="resultado">
         RESULTADO IRA MOSTRAR AQUI
-    </div>   
+    </div>
 
 
     <!-- EXERCICIO TROCO VERIFICADO -->
@@ -72,7 +124,7 @@
         RESULTADO IRA MOSTRAR AQUI
     </div>
 
-    
+
 </body>
 
 </html>

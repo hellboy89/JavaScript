@@ -1,4 +1,4 @@
-// const entrada = require("prompt-sync")()
+const entrada = require("prompt-sync")()
 // RODAR ESSE COMANDO AO LADO PARA USAR ESSE DE CIMA: npm install prompt-sync
 
 function entradaText() {
